@@ -14,6 +14,7 @@
 		1815BD8F1C128F4F002E5C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1815BD8D1C128F4F002E5C2B /* LaunchScreen.storyboard */; };
 		1815BD9A1C128F4F002E5C2B /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815BD991C128F4F002E5C2B /* TipCalculatorTests.swift */; };
 		1815BDA51C128F4F002E5C2B /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815BDA41C128F4F002E5C2B /* TipCalculatorUITests.swift */; };
+		1815BDB31C12904F002E5C2B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815BDB21C12904F002E5C2B /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1815BDA01C128F4F002E5C2B /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1815BDA41C128F4F002E5C2B /* TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITests.swift; sourceTree = "<group>"; };
 		1815BDA61C128F4F002E5C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1815BDB21C12904F002E5C2B /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1815BD8B1C128F4F002E5C2B /* Assets.xcassets */,
 				1815BD8D1C128F4F002E5C2B /* LaunchScreen.storyboard */,
 				1815BD901C128F4F002E5C2B /* Info.plist */,
+				1815BDB21C12904F002E5C2B /* Calculator.swift */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				1815BD871C128F4F002E5C2B /* ViewController.swift in Sources */,
 				1815BD851C128F4F002E5C2B /* AppDelegate.swift in Sources */,
+				1815BDB31C12904F002E5C2B /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
