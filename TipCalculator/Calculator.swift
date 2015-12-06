@@ -17,8 +17,15 @@ class Calculator{
             return total/(taxPct+1)
         }
     }
+    
+    var postTax:Double{
+        get{
+            return total*(1+taxPct)
+        }
+    }
+    
     init(BillTotal total:Double, TaxPercentage taxPct:Double){
-        self.total=taxPct
+        self.total=total;
         self.taxPct=taxPct;
     }
     

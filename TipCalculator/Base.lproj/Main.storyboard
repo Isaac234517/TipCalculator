@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill (pos tax)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlT-CQ-T4i">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill (pre tax)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlT-CQ-T4i">
                                 <rect key="frame" x="20" y="109" width="101" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -41,6 +41,9 @@
                                 <rect key="frame" x="91" y="202" width="166" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Calculate Tax"/>
+                                <connections>
+                                    <action selector="calculateTax:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VPg-Pr-aLo"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCb-8I-C77">
                                 <rect key="frame" x="15" y="271" width="355" height="376"/>
@@ -49,9 +52,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oJ8-lN-yly">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oJ8-lN-yly">
                                 <rect key="frame" x="161" y="143" width="203" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="percentageChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="SUc-nb-vqO"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <animations/>
@@ -72,7 +78,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="rzx-4f-DTD"/>
+                <tapGestureRecognizer id="rzx-4f-DTD">
+                    <connections>
+                        <action selector="ViewTapped:" destination="BYZ-38-t0r" id="dNq-6O-kzA"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1056.5" y="305.5"/>
         </scene>
